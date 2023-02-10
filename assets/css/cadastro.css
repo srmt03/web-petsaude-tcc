@@ -7,7 +7,7 @@ body{
     background-position: right;
     background-size: 55%;
     font-family: 'Inter', sans-serif;
-    animation: zoom 1s;
+    animation: zoom 0.9s;
 }
 
 /* DEFINIÇÕES DE BACKGROUND E TAMANHO */
@@ -24,7 +24,7 @@ main{
     background: linear-gradient(112deg, rgba(9, 43, 90, 0.7) 0%, rgba(158, 209, 183, 0.7) 100%);
 }
 
-/* FORMULÁRIO DE LOGIN */
+/* FORMULÁRIO DE CADASTRO */
 .form{
     display: flex;
     flex-direction: column;
@@ -53,7 +53,7 @@ main{
     font-weight: 400;
     color: #A9A9A9;
 }
-/** Login com o Google **/
+/** Cadastro com o Google **/
 .login-google{
     display: flex;
     flex-direction: column;
@@ -98,13 +98,12 @@ main{
     background-color: #ECECEC;
     flex-grow: 1;
 }
-/*** Inputs dos Dados de Login ***/
+/*** Inputs dos Dados de Cadastro ***/
 .inputs{
     display: flex;
     flex-direction: column;
     width: 50%;
-    gap: 10px;
-    animation: zoom 0.7s;
+    gap: 8px;
 }
 .inputs span{
     font-size: 1.2rem;
@@ -112,22 +111,40 @@ main{
 }
 .inputs input{
     font-size: 1.1rem;
-    height: 70px;
+    height: 60px;
     width: 100%;
     border-bottom: 1px solid black;
 }
-/*** Reset da Senha ***/
-.resetPass{
+.form-group{
     display: flex;
-    justify-content: flex-end;
-    font-weight: 600;
+    gap: 35px;
 }
-.resetPass a{
-    font-size: 1.1rem;
+.form-group-name{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.form-group-sourname{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.form-group-cel{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.form-group-tel{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
 }
 
-/*** BOTÃO DE LOGIN ***/
-.login-button{
+/*** BOTÃO "CONTINUAR" ***/
+.next-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 50px;
     background-color: #09738A;
     color: white;
@@ -137,18 +154,18 @@ main{
     margin-top: 10%;
     transition: 0.5s;
 }
-.login-button:hover{
+.next-button:hover{
     background-color: #78A890;
     transform: scale(1.03);
 }
-/* NOVO CADASTRO */
-.new-register{
+/* FAZER LOGIN */
+.text-login{
     display: flex;
     font-size: 1.1rem;
-    margin-top: 25%;
+    margin-top: 10%;
     gap: 6px;
 }
-.new-register a{
+.text-login a{
     font-weight: bold;
 }
 
@@ -163,6 +180,7 @@ main{
     }
 }
 
+
 /**
 *
 *   RESPONSIVIDADE
@@ -170,7 +188,7 @@ main{
 **/
 
 
-/*** DESKTOP ***/
+/* DESKTOP */
 @media (max-width:1920px) {
     /** Header do Form **/
     .apresentation h1{
@@ -179,7 +197,7 @@ main{
     .apresentation span{
         font-size: 1.2rem;
     }
-    /** Login com o Google **/
+    /** Cadastro com o Google **/
     .button-login-google{
         height: 60px;
         width: 60px;
@@ -187,9 +205,9 @@ main{
     .text-login-google{
         font-size: 1rem;
     }
-    /*** Inputs dos Dados de Login ***/
+    /*** Inputs dos Dados de Cadastro ***/
     .inputs{
-        gap: 8px;
+        gap: 6px;
     }
     .inputs span{
         font-size: 1.1rem;
@@ -198,18 +216,12 @@ main{
         font-size: 1rem;
         height: 50px;
     }
-    /*** Reset da Senha ***/
-    .resetPass a{
-        font-size: 0.9rem;
-    }
-
-    /*** BOTÃO DE LOGIN ***/
-    .login-button{
+    /*** BOTÃO "CONTINUAR" ***/
+    .next{
         font-size: 1.3rem;
     }
-
-    /* NOVO CADASTRO */
-    .new-register{
+    /* FAZER LOGIN */
+    .text-login{
         font-size: 1rem;
     }
 }
@@ -221,30 +233,5 @@ main{
 
 /* MOBILE */
 @media (max-width:767px) {
-    /* DEFINIÇÕES DE TAMANHO E FONTE */
-    body{
-        background-image: none;
-    }
-    /* DEFINIÇÕES DE BACKGROUND E TAMANHO */
-    main{
-        flex-direction: column;
-    }
-    /** Cor do Background **/
-    .linear-gradient{
-        display: none;
-    }
-    /* FORMULÁRIO DE LOGIN */
-    .form{
-        width: 100%;
-        background-color: blue;
-        padding-top: 3%;
-        padding-bottom: 0.5%;
-    }
-    /** Header do Form **/
-    .apresentation h1{
-        font-size: 1.2rem;
-    }
-    .apresentation span{
-        font-size: 1.2rem;
-    }
+    
 }
