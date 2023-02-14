@@ -13,29 +13,33 @@
 </head>
 <body>
     <main>
-        <div class="form">
-            <div class="apresentation">
+        <form>
+            <div class="form-header">
                 <h1>Bem-vindo de volta!</h1>
                 <span>Por favor, insira suas informações abaixo</span>
+                <div class="login-google-button">
+                    <a class="button-login-google" href="###">
+                        <img src="../img/google.svg" alt="logo-link-google">
+                    </a>
+                    <span class="text-login-google">Ou use o e-mail</span>
+                </div>
             </div>
-            <div class="login-google">
-                <a class="button-login-google" href="###">
-                    <img src="../img/google.svg" alt="logo-link-google">
-                </a>
-                <span class="text-login-google">Ou use o e-mail</span>
-            </div>
-            <div class="inputs">
-                <span>E-mail</span>
-                <input type="email" name="" id="">
-                <span>Senha</span>
-                <input type="password" name="" id="">
-                <div class="resetPass">
+            <div class="inputs-container">
+                <label>
+                    E-mail
+                    <input type="email" name="" id="">
+                </label>
+                <label>
+                    Senha
+                    <input type="password" name="" id="">
+                </label>
+                <div class="reset-pass">
                     <a href="###">Esqueceu a senha?</a>
                 </div>
                 <button class="login-button">Entrar</button>
             </div>
             <p class="new-register">Ainda não tem uma conta?<a href="../html/cadastro.html">Cadastre-se</a></p>
-        </div>
+        </form>
         <div class="linear-gradient"></div>
     </main>
 </body>

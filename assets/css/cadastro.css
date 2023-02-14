@@ -25,42 +25,44 @@ main{
 }
 
 /* FORMULÁRIO DE CADASTRO */
-.form{
+form{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     width: 50%;
     height: 100%;
     background-color: white;
     padding-top: 4%;
-    padding-bottom: 1%;
+    padding-bottom: 2%;
 }
 /** Header do Form **/
-.apresentation{
+.form-header{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 70%;
+    height: fit-content;
 }
-.apresentation h1{
+.form-header h1{
     font-size: 3.5rem;
     font-weight: 700;
     letter-spacing: 0.05em;
 }
-.apresentation span{
+.form-header span{
     font-size: 1.5rem;
     font-weight: 400;
     color: #A9A9A9;
 }
 /** Cadastro com o Google **/
-.login-google{
+.login-google-button{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 10%;
-    width: 50%;
+    margin-top: 4%;
+    width: 72%;
+    gap: 8px;
 }
 .button-login-google{
     display: flex;
@@ -68,6 +70,7 @@ main{
     justify-content: center;
     height: 80px;
     width: 80px;
+    margin-bottom: 3%;
     background-color: #ECECEC;
     border-radius: 50%;
 }
@@ -99,17 +102,17 @@ main{
     flex-grow: 1;
 }
 /*** Inputs dos Dados de Cadastro ***/
-.inputs{
+.inputs-container{
     display: flex;
     flex-direction: column;
     width: 50%;
     gap: 8px;
 }
-.inputs span{
+label{
     font-size: 1.2rem;
     font-weight: 400;
 }
-.inputs input{
+label input{
     font-size: 1.1rem;
     height: 60px;
     width: 100%;
@@ -118,26 +121,6 @@ main{
 .form-group{
     display: flex;
     gap: 35px;
-}
-.form-group-name{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-}
-.form-group-sourname{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-}
-.form-group-cel{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-}
-.form-group-tel{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
 }
 
 /*** BOTÃO "CONTINUAR" ***/
@@ -162,7 +145,7 @@ main{
 .text-login{
     display: flex;
     font-size: 1.1rem;
-    margin-top: 10%;
+    margin-top: 8%;
     gap: 6px;
 }
 .text-login a{
@@ -189,12 +172,12 @@ main{
 
 
 /* DESKTOP */
-@media (max-width:1920px) {
+@media (min-width:1024px) and (max-width:1920px) {
     /** Header do Form **/
-    .apresentation h1{
+    .form-header h1{
         font-size: 2.5rem;
     }
-    .apresentation span{
+    .form-header span{
         font-size: 1.2rem;
     }
     /** Cadastro com o Google **/
@@ -206,22 +189,23 @@ main{
         font-size: 1rem;
     }
     /*** Inputs dos Dados de Cadastro ***/
-    .inputs{
+    .inputs-container{
         gap: 6px;
     }
-    .inputs span{
+    label{
         font-size: 1.1rem;
     }
-    .inputs input{
+    label input{
         font-size: 1rem;
         height: 50px;
     }
     /*** BOTÃO "CONTINUAR" ***/
-    .next{
+    .next-button{
         font-size: 1.3rem;
     }
     /* FAZER LOGIN */
     .text-login{
+        margin-top: 2%;
         font-size: 1rem;
     }
 }
@@ -233,5 +217,78 @@ main{
 
 /* MOBILE */
 @media (max-width:767px) {
+    /* DEFINIÇÕES DE TAMANHO E FONTE */
+    body{
+        background-image: none;
+        height: 100%;
+        width: 100%;
+    }
+    /* DEFINIÇÕES DE BACKGROUND E TAMANHO */
+    main{
+        flex-direction: column;
+    }
+    /** Cor do Background **/
+    .linear-gradient{
+        display: none;
+    }
+    /* FORMULÁRIO DE LOGIN */
+    form{
+        width: 100%;
+        background-color: white;
+        padding: 32px;
+    }
+    /** Header do Form **/
+    .form-header{
+        width: 100%;
+    }
+    .form-header h1{
+        font-size: 1.9rem;
+    }
+    .form-header span{
+        font-size: 0.9rem;
+    }
+    /** Login com o Google **/
+    .login-google-button{
+        margin-top: 5%;
+        width: 100%;
+        margin-bottom: 8%;
+    }
+    .button-login-google{
+        height: 60px;
+        width: 60px;
+        margin-bottom: 5%;
+    }
+    .button-login-google img{
+        height: 65%;
+        width: 65%;
+    }
+    .text-login-google{
+        font-size: 1rem;
+    }
+    /*** Inputs dos Dados de Cadastro ***/
+    .inputs-container{
+        width: 100%;
+        gap: 16px;
+    }
+    label{
+        font-size: 1rem;
+    }
+    label input{
+        font-size: 1rem;
+        height: 50px;
+    }
+    .form-group{
+        flex-direction: column;
+    }
+    /*** BOTÃO "CONTINUAR" ***/
+    .next-button{
+        height: 45px;
+        font-size: 1.2rem;
+    }
+    /* FAZER LOGIN */
+    .text-login{
+        margin-top: 8%;
+        font-size: 1rem;
+    }
     
 }

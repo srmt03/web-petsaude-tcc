@@ -25,7 +25,7 @@ main{
 }
 
 /* FORMULÁRIO DE LOGIN */
-.form{
+form{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -37,30 +37,31 @@ main{
     padding-bottom: 1%;
 }
 /** Header do Form **/
-.apresentation{
+.form-header{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 70%;
+    height: fit-content;
 }
-.apresentation h1{
+.form-header h1{
     font-size: 3.5rem;
     font-weight: 700;
     letter-spacing: 0.05em;
 }
-.apresentation span{
+.form-header span{
     font-size: 1.5rem;
     font-weight: 400;
     color: #A9A9A9;
 }
 /** Login com o Google **/
-.login-google{
+.login-google-button{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    height: 10%;
-    width: 50%;
+    margin-top: 4%;
+    width: 72%;
+    gap: 8px;
 }
 .button-login-google{
     display: flex;
@@ -68,6 +69,7 @@ main{
     justify-content: center;
     height: 80px;
     width: 80px;
+    margin-bottom: 3%;
     background-color: #ECECEC;
     border-radius: 50%;
 }
@@ -99,30 +101,29 @@ main{
     flex-grow: 1;
 }
 /*** Inputs dos Dados de Login ***/
-.inputs{
+.inputs-container{
     display: flex;
     flex-direction: column;
     width: 50%;
     gap: 10px;
-    animation: zoom 0.7s;
 }
-.inputs span{
+label{
     font-size: 1.2rem;
     font-weight: 400;
 }
-.inputs input{
+label input{
     font-size: 1.1rem;
     height: 70px;
     width: 100%;
     border-bottom: 1px solid black;
 }
 /*** Reset da Senha ***/
-.resetPass{
+.reset-pass{
     display: flex;
     justify-content: flex-end;
     font-weight: 600;
 }
-.resetPass a{
+.reset-pass a{
     font-size: 1.1rem;
 }
 
@@ -134,7 +135,7 @@ main{
     font-size: 1.5rem;
     font-weight: 700;
     border-radius: 10px;
-    margin-top: 10%;
+    margin-top: 8%;
     transition: 0.5s;
 }
 .login-button:hover{
@@ -145,7 +146,7 @@ main{
 .new-register{
     display: flex;
     font-size: 1.1rem;
-    margin-top: 25%;
+    margin-top: 20%;
     gap: 6px;
 }
 .new-register a{
@@ -171,12 +172,12 @@ main{
 
 
 /*** DESKTOP ***/
-@media (max-width:1920px) {
+@media (min-width:1024px) and (max-width:1920px) {
     /** Header do Form **/
-    .apresentation h1{
+    .form-header h1{
         font-size: 2.5rem;
     }
-    .apresentation span{
+    .form-header span{
         font-size: 1.2rem;
     }
     /** Login com o Google **/
@@ -188,18 +189,18 @@ main{
         font-size: 1rem;
     }
     /*** Inputs dos Dados de Login ***/
-    .inputs{
+    .inputs-container{
         gap: 8px;
     }
-    .inputs span{
+    label{
         font-size: 1.1rem;
     }
-    .inputs input{
+    label input{
         font-size: 1rem;
         height: 50px;
     }
     /*** Reset da Senha ***/
-    .resetPass a{
+    .reset-pass a{
         font-size: 0.9rem;
     }
 
@@ -234,17 +235,64 @@ main{
         display: none;
     }
     /* FORMULÁRIO DE LOGIN */
-    .form{
+    form{
         width: 100%;
-        background-color: blue;
-        padding-top: 3%;
-        padding-bottom: 0.5%;
+        background-color: white;
+        padding: 32px;
+        justify-content: space-around;
     }
     /** Header do Form **/
-    .apresentation h1{
+    .form-header{
+        width: 100%;
+    }
+    .form-header h1{
+        font-size: 1.8rem;
+    }
+    .form-header span{
+        font-size: 1rem;
+    }
+    /** Login com o Google **/
+    .login-google-button{
+        margin-top: 10%;
+        width: 100%;
+    }
+    .button-login-google{
+        height: 60px;
+        width: 60px;
+        margin-bottom: 5%;
+    }
+    .button-login-google img{
+        height: 65%;
+        width: 65%;
+    }
+    .text-login-google{
+        font-size: 1rem;
+    }
+    /*** Inputs dos Dados de Login ***/
+    .inputs-container{
+        width: 100%;
+        gap: 6px;
+    }
+    label{
+        font-size: 1rem;
+    }
+    label input{
+        font-size: 1rem;
+        height: 50px;
+    }
+    /*** Reset da Senha ***/
+    .reset-pass a{
+        font-size: 1rem;
+    }
+
+    /*** BOTÃO DE LOGIN ***/
+    .login-button{
+        height: 45px;
         font-size: 1.2rem;
     }
-    .apresentation span{
-        font-size: 1.2rem;
+    /* NOVO CADASTRO */
+    .new-register{
+        margin-top: 40%;
+        font-size: 1rem;
     }
 }

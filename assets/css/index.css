@@ -1,0 +1,14 @@
+body{
+    height: 100%;
+    width: 100%;
+}
+a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 50%;
+    background-color: blue;
+    color: black;
+    font-size: 48px;
+}
