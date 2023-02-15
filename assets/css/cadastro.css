@@ -234,7 +234,6 @@ label input{
     /* FORMULÁRIO DE LOGIN */
     form{
         width: 100%;
-        background-color: white;
         padding: 32px;
     }
     /** Header do Form **/
