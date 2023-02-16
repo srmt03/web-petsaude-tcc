@@ -105,7 +105,7 @@ form{
     display: flex;
     flex-direction: column;
     width: 50%;
-    gap: 10px;
+    gap: 16px;
 }
 label{
     font-size: 1.2rem;
@@ -271,7 +271,7 @@ label input{
     /*** Inputs dos Dados de Login ***/
     .inputs-container{
         width: 100%;
-        gap: 6px;
+        gap: 16px;
     }
     label{
         font-size: 1rem;

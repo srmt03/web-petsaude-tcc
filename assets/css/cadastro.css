@@ -106,11 +106,12 @@ form{
     display: flex;
     flex-direction: column;
     width: 50%;
-    gap: 8px;
+    gap: 16px;
 }
 label{
     font-size: 1.2rem;
     font-weight: 400;
+
 }
 label input{
     font-size: 1.1rem;
@@ -120,6 +121,8 @@ label input{
 }
 .form-group{
     display: flex;
+    justify-content: space-between;
+    width: 100%;
     gap: 35px;
 }
 
@@ -248,14 +251,14 @@ label input{
     }
     /** Login com o Google **/
     .login-google-button{
-        margin-top: 5%;
+        margin-top: 8%;
         width: 100%;
         margin-bottom: 8%;
     }
     .button-login-google{
         height: 60px;
         width: 60px;
-        margin-bottom: 5%;
+        margin-bottom: 4%;
     }
     .button-login-google img{
         height: 65%;
@@ -278,7 +281,8 @@ label input{
     }
     .form-group{
         flex-direction: column;
-    }
+        gap: 16px;
+    }   
     /*** BOTÃO "CONTINUAR" ***/
     .next-button{
         height: 45px;
