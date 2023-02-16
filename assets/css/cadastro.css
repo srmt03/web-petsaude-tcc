@@ -119,6 +119,7 @@ label input{
     width: 100%;
     border-bottom: 1px solid black;
 }
+/* ERROR */
 .form-group{
     display: flex;
     justify-content: space-between;
@@ -279,6 +280,7 @@ label input{
         font-size: 1rem;
         height: 50px;
     }
+    /* ERROR */
     .form-group{
         flex-direction: column;
         gap: 16px;

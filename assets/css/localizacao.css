@@ -94,8 +94,10 @@ label input{
     width: 100%;
     border-bottom: 1px solid black;
 }
+/* ERROR */
 .form-group{
     display: flex;
+    justify-content: space-between;
     width: 100%;
     gap: 35px;
 }
@@ -258,16 +260,19 @@ label input{
     }
     .form-group{
         flex-direction: column;
+        gap: 16px;
     }
     /* CONTEINER DOS BOTÕES */
     .user{
         width: 100%;
         flex-direction: column;
+        margin-top: 5%;
+        gap: 10px;
     }
     /** Botão de Cadastro **/
     .register-button{
         width: 100%;
-        margin-top: 5%;
+        margin-top: 0;
     }
     /* FAZER LOGIN */
     .text-login{
