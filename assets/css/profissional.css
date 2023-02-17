@@ -82,8 +82,15 @@ form{
     display: flex;
     flex-direction: column;
     width: 50%;
-    gap: 16px;
+    gap: 50px;
 }
+
+.checkbox-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
 .specialties{
     display: flex;
     flex-direction: column;
@@ -98,28 +105,42 @@ form{
     flex-wrap: wrap;
     align-items: center ;
     /* justify-content: space-between; */
-    text-align: center;
-    gap: 50px;
 }
 .inputs-specialties label{
     display: flex;
     align-items: center;
-    width: max-content;
+    /* width: max-content; */
     font-size: 1.2rem;
     font-weight: 400;
     gap: 6px;
+    padding-top: 2px;
+    padding-right: 40px;
 }
+
 .inputs-specialties input{
-    height: 100%;
+    
+    width: 20px;
+    border: none;
+    background-color: #A9A9A9;
+
+    
 }
+
+/*****************************/
+
 .animals{
+
     display: flex;
     flex-direction: column;
     gap: 16px;
+    padding-top: 10px;
 }
+
 .animals span{
+
     font-size: 1.2rem;
     font-weight: 400;
+    padding-top: 5%;
 }
 .inputs-animals{
     display: flex;
@@ -148,6 +169,7 @@ label input{
     width: 100%;
     border-bottom: 1px solid black;
 }
+
 /* ERROR */
 .form-group{
     display: flex;
