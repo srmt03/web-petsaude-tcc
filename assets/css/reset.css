@@ -1,17 +1,35 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root {
+  --blue-400: #91b0b2;
+  --blue-600: #09738a;
+  --blue-700: #092b5a;
+  --green-400: #9ed1b7;
+  --green-500: #78a890;
+  --beige-500: #e7d9b4;
+  --white-100: #ffffff;
+  --white-300: #ececec;
+  --white-500: #a9a9a9;
+  --gray-600: #49454f;
+  --black-700: #1c1b1f;
+  --black-900: #000000;
 }
-a{
-    text-decoration: none;
-    color: black;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-input{
-    border: none;
-    outline: none;
+
+a {
+  text-decoration: none;
+  color: black;
 }
-button{
-    border: none;
-    outline: none;
+
+input {
+  border: none;
+  outline: none;
+}
+
+button {
+  border: none;
+  outline: none;
 }
