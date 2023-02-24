@@ -91,6 +91,8 @@ form{
 }
 
 
+/** Especialidades do profissional **/
+
 .specialties{
     display: flex;
     flex-direction: column;
@@ -155,9 +157,13 @@ form{
     font-size: 1.2rem;
     font-weight: 400;
     gap: 6px;
+    padding-top: 2px;
+    padding-right: 40px;
 }
 .inputs-animals input{
-    height: 100%;
+    width: 20px;
+    border: none;
+    background-color: #A9A9A9;
 }
 label{
     font-size: 1.2rem;
@@ -226,10 +232,28 @@ label input{
 *
 **/
 
-
-/*** DESKTOP ***/
-@media (min-width:1024px) and (max-width:1920px) {
-    
+/* DESKTOP */
+@media (max-width:1920px) {
+    /* BOTÃO VOLTAR A TELA ANTERIOR */
+    .back-view i {
+        font-size: 3rem;
+    }
+    /* DEFINIÇÃO DE IMAGEM BACKGROUND */
+    .conteiner-img{
+        transform: translateX(2%);
+    }
+    .bg-image{
+        height: 78%;
+    }
+    /** Botão de Cadastro **/
+    .register-button{
+        padding: 6%;
+        font-size: 1.1rem;
+    }
+    /* FAZER LOGIN */
+    .text-login{
+        font-size: 1rem;
+    }
 }
 
 /* TABLET */
@@ -239,5 +263,40 @@ label input{
 
 /* MOBILE */
 @media (max-width:767px) {
+    /* DEFINIÇÕES DE TAMANHO E FONTE */
+    body{
+        height: 100%;
+        width: 100%;
+    }
+    /* DEFINIÇÕES DE BACKGROUND E TAMANHO */
+    main{
+        flex-direction: column;
+        justify-content: center;
+        background: none;
+    }
+    /* BOTÃO VOLTAR A TELA ANTERIOR */
+    .back-view{
+        display: none;
+    }
+    /* DEFINIÇÕES DE IMAGEM BACKGROUND */
+    .conteiner-img{
+        display: none;
+    }
+    /* CONTEINER DOS BOTÕES */
+    .user{
+        width: 100%;
+        flex-direction: column;
+        margin-top: 5%;
+        gap: 10px;
+    }
+    /** Botão de Cadastro **/
+    .register-button{
+        width: 100%;
+        margin-top: 0;
+    }
+    /* FAZER LOGIN */
+    .text-login{
+        font-size: 1rem;
+    }
+}   
 
-}
