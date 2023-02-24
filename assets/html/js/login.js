@@ -20,24 +20,18 @@ function showHide() {
 
 icon.addEventListener("click", showHide);
 
-loginButton.addEventListener("click", async () => {
+loginButton.addEventListener("click", async (el) => {
   const email = emailInput.value;
   const password = passwordInput.value;
   const loginInfos = { email, password };
 
   const token = await signup(loginInfos.email, loginInfos.password);
 
-  if (token) localStorage.setItem("token", token);
-  else {
+  if (token) {
+    el.preventDefault();
+    localStorage.setItem("token", token);
+    location.href = "../../index.html";
+  } else {
     document.querySelector(".error-popup").classList.add("show");
   }
 });
-
-// emailInput.addEventListener("input", (e) => {
-//   console.log(e);
-//   document.querySelector(".error-popup").classList.remove("show");
-// });
-
-// document.querySelector(".hide-popup-btn").addEventListener("click", () => {
-//   document.querySelector(".error-popup").classList.remove("show");
-// });
