@@ -46,17 +46,17 @@
                     </label>
                     <label>
                         Confirme a senha
-                        <input type="password" name="" id="password">
-                        <div id="icon" onclick="showHide()"></div>
+                        <input type="passwordConfirm" name="" id="passwordConfirm">
+                        <div id="iconConfirm" onclick="showHideConfirm()"></div>
                     </label>
                     <div class="form-group">
                         <label>
                             Celular
-                            <input type="tel" name="" id="">
+                            <input type="text" name="celular" id="celular" size="20" maxlength="14" onkeypress="mascara(this)"> 
                         </label>
                         <label>
                             Telefone
-                            <input type="tel" name="" id="">
+                            <input type="text" name="telefone" id="telefone" size="20" maxlength="14" onkeypress="mascara(this)"> 
                         </label>                   
                     </div>
                     <a href="./localizacao.html" class="next-button">Continuar</a>
@@ -65,6 +65,6 @@
         </form>
         <div class="linear-gradient"></div>
     </main>
-    <script src="/assets/js/petsaude.js"></script>
+    <script src="../js/petsaude.js"></script>
 </body>
 </html>

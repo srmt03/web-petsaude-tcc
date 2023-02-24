@@ -217,6 +217,7 @@ label input{
         flex-direction: column;
         justify-content: center;
         background: none;
+        align-items: center;
     }
     /* BOTÃO VOLTAR A TELA ANTERIOR */
     .back-view{
@@ -229,7 +230,6 @@ label input{
     /* FORMULÁRIO DE LOCALIZAÇÃO */
     form{
         width: 100%;
-        padding: 32px;
     }
     /** Header do Form **/
     .form-header{
@@ -244,6 +244,7 @@ label input{
         align-items: center;
         font-size: 0.9rem;
     }
+
     /*** Inputs dos Dados de Localização ***/
     .inputs-container{
         margin-top: 10%;

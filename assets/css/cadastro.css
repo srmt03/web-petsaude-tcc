@@ -184,6 +184,22 @@ label input{
     background-size: cover;
 }
 
+/* Confirmação de senha */
+#iconConfirm{
+    margin-left: 93%;
+    transform: translateY(-130%);
+    background: url('/assets/img/show.png');
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+}
+
+#iconConfirm.hide{
+    background: url('/assets/img/hide.png');
+    background-size: cover;
+}
 
 /**
 *
