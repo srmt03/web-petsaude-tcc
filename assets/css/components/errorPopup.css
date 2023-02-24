@@ -1,0 +1,60 @@
+.error-popup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 500px;
+  position: absolute;
+  top: 3rem;
+  right: -500px;
+  overflow: hidden;
+  border-radius: 10px 0 0 10px;
+  background-color: var(--white-100);
+  padding-right: 12px;
+}
+
+.error-popup.show {
+  right: 0;
+}
+
+.error-popup img {
+  height: 100px;
+  width: 100px;
+}
+
+.error-popup > img {
+  background-color: var(--error-color);
+  border-right: 1px solid var(--white-500);
+  padding: 16px;
+}
+
+.error-popup span {
+  flex-grow: 1;
+  padding: 12px;
+  font-size: 1.5rem;
+}
+
+.error-popup button {
+  height: 100px;
+  width: fit-content;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid var(--white-500);
+  padding-left: 12px;
+}
+
+.error-popup > button > img {
+  border: 1px solid transparent;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  padding: 10px;
+  transition: 500ms ease;
+}
+
+.error-popup > button:hover > img {
+  border: 1px solid var(--white-500);
+  background-color: var(--white-300);
+}
