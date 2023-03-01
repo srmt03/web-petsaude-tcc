@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    padding-top: 2%;
+    padding-left: 5%;
+  
+}
+
+.home{
+    padding-left: 10vh;
+    height: 2vh;
+}
+
+.pages-container{
+    gap: 5vh;
+    display:flex;
+    justify-content: center;
+    color: #ffff;
+    font-size: 1.5vh;
+    
+}
+
+.pages-container a{
+    color: black;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Parte inicial da home que será o site principal*/
+
+main{
+    padding-top: 5%;
+    padding-left: 5%;
+
+}
+
+/* Campo de pesquisa por especialista e busca por localização */
+.search-container{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.search-container input{
+    width: 200px;
+    height: 50px;
+}
