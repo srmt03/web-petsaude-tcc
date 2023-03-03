@@ -368,22 +368,17 @@ label input{
       width: 200px;
     }
 
-    .area{
-
-    }
-
-    .CRMV{
-        
-    }
 
     /* BOTÃO VOLTAR A TELA ANTERIOR */
     .back-view{
         display: none;
     }
+    
     /* DEFINIÇÕES DE IMAGEM BACKGROUND */
     .conteiner-img{
         display: none;
     }
+
     /* CONTEINER DOS BOTÕES */
     .user{
         display: flex;

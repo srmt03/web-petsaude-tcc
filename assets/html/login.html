@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/login.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/login.css" />
     <title>PetSaúde - Login</title>
-</head>
-<body>
+    <script src="./js/login.js" defer type="module"></script>
+    <script
+      src="https://kit.fontawesome.com/d374dd1618.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <main>
+<<<<<<< HEAD
         <form>
             <div class="form-header">
                 <h1>Bem-vindo de volta!</h1>
@@ -44,7 +53,48 @@
             <p class="new-register">Ainda não tem uma conta?<a href="../html/cadastro.html">Cadastre-se</a></p>
         </form>
         <div class="linear-gradient"></div>
+=======
+      <form>
+        <div class="form-header">
+          <h1>Bem-vindo de volta!</h1>
+          <span>Por favor, insira suas informações abaixo</span>
+          <div class="login-google-button">
+            <a class="button-login-google" href="###">
+              <img src="../img/google.svg" alt="logo-link-google" />
+            </a>
+            <span class="text-login-google">Ou use o e-mail</span>
+          </div>
+        </div>
+        <div class="inputs-container">
+          <label>
+            E-mail
+            <input type="email" name="" id="email-input" />
+          </label>
+          <label>
+            Senha
+            <input type="password" name="" id="password-input" />
+            <div id="icon"></div>
+          </label>
+          <a href="###" class="reset-pass">Esqueceu a senha?</a>
+          <button type="button" class="login-button" id="login-button">
+            Entrar
+          </button>
+        </div>
+        <p class="new-register">
+          Ainda não tem uma conta?<a href="../html/cadastro.html"
+            >Cadastre-se</a
+          >
+        </p>
+      </form>
+      <div class="linear-gradient"></div>
+>>>>>>> 6bc2765d404677cc2d3ad4e1e4838df0755e13e3
     </main>
-    <script src="/assets/js/petsaude.js"></script>
-</body>
+    <div class="error-popup">
+      <img src="./img/circle-exclamation-solid.svg" />
+      <span>E-mail inválido</span>
+      <button type="button" class="hide-popup-btn">
+        <img src="./img/xmark-solid.svg" />
+      </button>
+    </div>
+  </body>
 </html>
