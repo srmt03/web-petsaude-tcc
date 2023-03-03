@@ -308,10 +308,10 @@ label input{
         background: none;
     }
 
+    /* Formação de toda main com seus inputs */
+
     form{
         display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
         align-items: flex-start;
         font-size: 10rem;
         width: 100%;
@@ -321,6 +321,10 @@ label input{
         padding-left: 10%;
         padding-bottom: 1%;
         z-index: 2;
+    }
+
+    form .form-header{
+        margin: 20px;
     }
 
     .form-header h1{
@@ -336,14 +340,22 @@ label input{
     }
 
     .form-group{
-        display: block;
+       display: flex;
+       flex-direction: column;
+    }
+
+    /* Especialidades e caracteristicas dos animais */
+    .inputs-specialties {
+        display: flex;
+        flex-wrap: wrap;
+        width: 190%;
     }
 
 
-    /* Especialidades e caracteristicas dos animais */
     .specialties span{
         padding-top: 40px;
-        font-size: 1.9rem;
+        font-size: 1.3rem;
+        font-weight: bold;
     }
 
     .inputs-animals{
@@ -351,23 +363,51 @@ label input{
         display: flex;
         flex-wrap: wrap;
         align-items: center ;
+        width: 160%;
     }
 
     .inputs-animals input{
         align-items: flex-start;
     }
 
+
     .animals span{
         padding-top: 40px;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        width: 210px;
+        font-weight: bold;
+    }
+    
+    /* Area de atuação */
+
+    .atuacao-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .atuacao-container input{
+        width: 170%;
     }
 
     /* Area de atuação e CRMV em conjuto*/
-    .atuacao-crmv p{
-      font-size: 20px;
-      width: 200px;
+    .atuacao-crmv{
+        display: flex;
+        flex-direction: column;
+        padding-top: 0%;
+        gap: 10%;
     }
 
+    .atuacao-crmv p{
+      font-size: 20px;
+      width: 180px;
+    }
+
+    .atuacao-crmv input{
+        display: flex;
+        width: 160%;
+    }
 
     /* BOTÃO VOLTAR A TELA ANTERIOR */
     .back-view{
@@ -396,9 +436,8 @@ label input{
 
     /** Botão de Cadastro **/
     .register-button{
-        width: 100%;
-        height: 100%;
-        align-items: center;
+        width: 150%;
+        margin-left: 60%;
     }
 
     /* FAZER LOGIN */
@@ -406,7 +445,7 @@ label input{
         display: flex;
         font-size: 1.1rem;
         margin-top: 10%;
-        gap: 6px;
+        
     }
 }   
 
