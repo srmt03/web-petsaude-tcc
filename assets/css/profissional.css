@@ -1,4 +1,4 @@
- /* DEFINIÇÕES DE TAMANHO E FONTE */
+/* DEFINIÇÕES DE TAMANHO E FONTE */
 body{
     height: 100vh;
     width: 100vw;
@@ -17,7 +17,7 @@ main{
 
 /* BOTÃO VOLTAR A TELA ANTERIOR */
 .back-view{
-    display: flex;
+    display: flex; 
     align-items: center;
     justify-content: center;
     padding: 3%;

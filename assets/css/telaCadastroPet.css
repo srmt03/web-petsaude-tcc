@@ -1,0 +1,126 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(135deg, var(--white-300), var(--beige-500));
+}
+
+header{
+    background-color: var( --green-400);
+    height: 15%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.back-view{
+    display: flex; 
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 10%;
+}
+.back-view i {
+    font-size: 6rem;
+    color: black;
+    transition: 0.5s;
+}
+.back-view i:hover{
+    transform: scale(1.1);
+}
+
+main{
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+}
+
+.foto{
+    background-color: yellow;
+    width: 50vw;
+    height: 100%;
+}
+
+.infosAnimal{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: top;
+    justify-content: space-around;
+    padding-right: 200px;
+}
+
+.realInformations{
+    width: 50%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 90px;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+.textFormation{
+    width: 50px;
+    padding-right: 80px;
+    padding-left: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.textInput{
+    font-size: 1.5rem;
+}
+
+.inputLabel {
+    height: 30px;
+    width: 200px;
+    margin-top: 10px;
+}
+
+.nivel-agressividade{
+    width: 1000px;
+}
+
+.nivel-agressividade-select{
+    height: 30px;
+    width: 200px;
+    margin-top: 10px
+}
+
+.nivel-agress{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+
+footer{
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    background-color: red;
+    height: 50px;
+    width: 500px;
+    border-radius: 90px;
+    font-size: 1.5625rem;
+    font-weight: 700;
+    background-color: var(  --green-500);
+    color: white;
+    transition: 1.5s;
+}
+
+button:hover{
+    background-color: var(  --green-400);
+    transform: scale(1.3);
+    font-weight: 900;
+    color: black;
+}
