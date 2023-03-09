@@ -18,7 +18,7 @@ header{
     justify-content: space-between;
     align-items: end;
     border: none;
-    background-color: #90EE90;
+    background-color: #ffff;
 }
 
 .outside a:link{
@@ -31,8 +31,8 @@ header{
 }
 
 main{
-   
-    background-color: #EDE4CB;
+    
+    background-image: linear-gradient(135deg, var(--white-300), var(--beige-500));
 }
 
 /* Imagem e informações do tutor */
@@ -47,7 +47,7 @@ main{
     display: flex;
     flex-direction: column;
     border-radius: 15px;
-    background-color: #ffff;
+    background-color: white;
     margin-left: 50px;
     padding-top: 2%;
     width: 24%;
@@ -73,10 +73,24 @@ main{
 /* Informações dos pets */
 
 .pets-container{
-    width: 50%;
+    width: 60%;
+    height: 70%;
+    margin-top: 60px;
+    margin-right: 300px;
+}
+
+.dog{
+    display: flex;
+    align-items: center;
+    gap: 90px;
+    flex-wrap: wrap;
+}
+
+.Periquito {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #ffff;
-   border-radius: 20px;
+    gap: 90px;
+    flex-wrap: wrap;
 }
+
