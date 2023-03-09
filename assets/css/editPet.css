@@ -48,6 +48,9 @@ main{
 
 .fileAdd{
     height: 100%;
+    border-radius: 90%;
+    border: 0 solid black;
+    box-shadow: 0 25px 10px 
 }
 
 .infosAnimal{
@@ -132,6 +135,7 @@ main{
     border: none;
     border-bottom: 1px solid #000000;
     padding: 2px 5px;
+    font-size: large;
 }
 
 footer{
@@ -139,27 +143,42 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 120px;
 }
 
 button{
-    background-color: red;
     height: 50px;
-    width: 500px;
+    width: 250px;
     border-radius: 90px;
-    font-size: 1.5625rem;
-    font-weight: 700;
-    background-color: var(  --green-500);
-    color: white;
     transition: 1.5s;
 }
 
+.excluir{
+    background-color: #F50C0C; 
+}
+
+.excluir a{
+    font-size: 1.5625rem;
+    color: white;  
+}
+
+.salvar{
+    background-color: var(  --green-500);
+}
+
+.salvar a{
+    font-size: 1.5625rem;
+    color: white;  
+}
+
+/*
 button:hover{
     background-color: var(  --green-400);
     transform: scale(1.3);
     font-weight: 900;
     color: black;
 }
-
+*/
 @media (min-width:768px) and (max-width:1023px){
     
 }
