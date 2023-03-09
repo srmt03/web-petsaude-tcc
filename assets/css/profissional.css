@@ -281,6 +281,13 @@ label input{
     }
     /* DEFINIÇÃO DE IMAGEM BACKGROUND */
    
+    /* DEFINIÇÕES DE IMAGEM BACKGROUND */
+    .conteiner-img{
+        display: flex;
+        align-items: flex-start;
+        margin-top: 200px;
+    }
+
     .bg-image{
         padding-right: 10%;
         height: 28%;
