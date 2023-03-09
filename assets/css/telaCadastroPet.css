@@ -7,7 +7,7 @@ body{
 header{
     background-color: var( --green-400);
     height: 15%;
-    display: flex;
+    display: flex; 
     justify-content: start;
     align-items: center;
 }
@@ -59,6 +59,7 @@ main{
 
 }
 
+/*
 .realInformations{
     width: 50%;
     height: 70%;
@@ -80,9 +81,32 @@ main{
     flex-direction: column;
     align-items: start;
 }
+*/
+
+.realInformations{
+    width: 70%;
+    height: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 60px;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    padding-right: 300px;
+    margin-right: 360px;
+}
+
+.textFormation{
+    width: 20px;
+    padding-right: 120px;
+    padding-left: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
 
 .textInput{
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .inputLabel {
@@ -94,6 +118,13 @@ main{
     margin-right: 50px;
 }
 
+.nivel-agress{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: top;
+}
+
 .nivel-agressividade-select{
     background-color: transparent;
     height: 30px;
@@ -102,17 +133,6 @@ main{
     border-bottom: 1px solid #000000;
     padding: 2px 5px;
 }
-
-.opcoes{
-    font-weight: bold
-}
-
-.nivel-agress{
-    display: flex;
-    align-items: start;
-    justify-content: center;
-}
-
 
 footer{
     height: 15%;
@@ -189,7 +209,6 @@ button:hover{
 
     body{
         width: 100vw;
-        height: 100vh;
         background-image: linear-gradient(135deg, var(--white-300), var(--beige-500));
     }
     
@@ -205,13 +224,14 @@ button:hover{
         width: 100%;
         padding: 0;
         height: 80%;
+        margin-bottom: 10px;
     }
 
     .foto{
         height: 214px;
         width: 214px;
-        margin-bottom: 20px;
-        margin-top: 87px;
+        margin-bottom: 2px;
+        margin-top: 80px;
         display: flex;
         padding: 0;
         align-items: center;
@@ -265,7 +285,25 @@ button:hover{
     }
 
     footer{
-        background-color: blueviolet;
-        height: 200px;
+        height: 20%;
+        display: flex;
+        justify-content: bottom;
+    }
+
+    button{
+        background-color: red;
+        height: 40px;
+        width: 261px;
+        border-radius: 90px;
+        font-size: 1.2rem;
+        background-color: var(  --green-500);
+        color: white;
+    }
+    
+    button:hover{
+        background-color: var(  --green-500);
+        transform: scale(1);
+        font-weight: unset;
+        color: white;
     }
 }
