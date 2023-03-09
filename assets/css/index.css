@@ -144,12 +144,15 @@ body{
 
 .home-btn{
     padding: 15px 45px;
+    border-style: solid;
     border-color: #78a890;
     color: var(--black);
     border-radius: 10px;
-    font-weight: 700px;
+    font-weight: 700;
     transition: all 0.5s;
 }
+
+
 .home-btn:hover{
     background: var(--green-500);
 }
