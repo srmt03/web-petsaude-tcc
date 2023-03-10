@@ -157,7 +157,7 @@ button{
     background-color: #F50C0C; 
 }
 
-.excluir a{
+.asButton{
     font-size: 1.5625rem;
     color: white;  
 }
@@ -166,7 +166,7 @@ button{
     background-color: var(  --green-500);
 }
 
-.salvar a{
+.asButton{
     font-size: 1.5625rem;
     color: white;  
 }
@@ -306,17 +306,21 @@ button:hover{
     footer{
         height: 20%;
         display: flex;
-        justify-content: bottom;
+        justify-content: center;
+        gap: 40px;
     }
 
     button{
-        background-color: red;
-        height: 40px;
-        width: 261px;
+        height: 25px;
+        width: 128px;
         border-radius: 90px;
-        font-size: 1.2rem;
         background-color: var(  --green-500);
         color: white;
+    }
+
+    .asButton{
+        font-size: 0.9rem;
+        font-weight: 0;
     }
     
     button:hover{
