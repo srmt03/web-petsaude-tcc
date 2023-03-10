@@ -89,6 +89,7 @@ body{
 /* Main da ladding page*/
 /* Campo de pesquisa por especialista e busca por localização */
 .search-container{
+    padding-left: 30%;
     margin-top: -15%;
     margin-bottom: 10%;
     display: flex;
@@ -96,7 +97,7 @@ body{
     align-items: center;
     text-align: center;
     height: 5vh;
-    width: 50vw;
+    width: 80vw;
     gap: 5%;
     
 }
@@ -105,24 +106,21 @@ body{
     background-position: left;
     background-image: url(../img/vet.png);
     background-repeat: no-repeat;
-    background-position: start;
-    background-size: 6%;
+    background-size: 5%;
     border-radius: 20px;
 }
 
 #Search-Vet{
-   
     background-position: left;
     background-image: url(../img/busca.png);
     background-repeat: no-repeat;
-    background-position: start;
-    background-size: 6%;
+    background-size: 5%;
     border-radius: 20px;
 }
 
 .search-container input{
-    padding-left: 10%;
-    font-size: 1rem;
+    padding-left: 5%;
+    font-size: 1.5rem;
     width: 100vw;
     height: 60px;
 }
@@ -166,7 +164,7 @@ body{
    background-color: var(--green-500);
 }
 .home-img img{
-    padding-top: 10%;
+    padding-top: 15%;
     width: 40vw;
  
 }
@@ -188,6 +186,13 @@ body{
         padding: 10%;
         width: 100%;
     }
+
+    .navigation h1{
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
     .menu{
         display: block;
     }
@@ -248,7 +253,7 @@ body{
     /*main*/
     .home{
         width: 100%;
-        height: 85vh;
+        height: 95vh;
         padding-top: 10%;
         padding-right: 5%;
         flex-direction: column;
@@ -276,7 +281,9 @@ body{
     }
   
     .home-img img{
+        padding-top: 1%;
         width: 110%;
+       
     }
 
     /* Login do user */
