@@ -154,18 +154,10 @@ body{
 
 .home-btn{
     padding: 15px 45px;
-<<<<<<< HEAD
     color: #000;
     border: solid 2px var(--green-500);
     border-radius: 10px;
     font-size: 1.5rem;
-=======
-    border-style: solid;
-    border-color: #78a890;
-    color: var(--black);
-    border-radius: 10px;
-    font-weight: 700;
->>>>>>> 683f8fe8d058183115f4ddf08f485e1c47652de1
     transition: all 0.5s;
 }
 
