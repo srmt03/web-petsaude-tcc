@@ -10,6 +10,7 @@
     <script src="https://kit.fontawesome.com/5f2b9e6a48.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/localizacao.css">
+    <script src="./js/utils/viaCep.js" defer type="module"></script>
     <title>PetSaúde - Localização</title>
 </head>
 <body>
@@ -25,25 +26,26 @@
             <div class="inputs-container">
                 <label>
                     CEP
-                    <input type="text" name="" id="">
+                    <input type="text" name="" id="cep">
+                    <div id="buscar">Buscar informações</div>
                 </label>
                 <div class="form-group">
                     <label>
                         Cidade
-                        <input type="text" name="" id="">
+                        <input type="text" name="" id="cidade">
                     </label>
                     <label>
                         Estado
-                        <input type="text" name="" id="">
+                        <input type="text" name="" id="estado">
                     </label>                  
                 </div>
                 <label>
                     Bairro
-                    <input type="text" name="" id="">
+                    <input type="text" name="" id="bairro">
                 </label>
                 <label>
                     Rua
-                    <input type="text" name="" id="">
+                    <input type="text" name="" id="rua">
                 </label>
                 <div class="form-group">
                     <label>
@@ -52,7 +54,7 @@
                     </label>
                     <label>
                         Complemento (se houver)
-                        <input type="text" name="" id="">
+                        <input type="text" name="" id="complemento">
                     </label>                
                 </div>
                 <div class="user">
