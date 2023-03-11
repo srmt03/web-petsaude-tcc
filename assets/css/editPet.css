@@ -42,10 +42,9 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 300px;
-    padding-bottom: 100px;
+    padding-left: 100px;
+    padding-bottom: 60px;
 }
-
 .fileAdd{
     height: 100%;
     border-radius: 90%;
@@ -53,13 +52,13 @@ main{
     box-shadow: 0 25px 10px 
 }
 
+
 .infosAnimal{
     width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: top;
-
 }
 
 /*
@@ -87,21 +86,22 @@ main{
 */
 
 .realInformations{
-    width: 70%;
-    height: 70%;
+    width: 100%;
+    height: 80%;
     display: flex;
     justify-content: space-evenly;
-    gap: 60px;
+    align-items: top;
+    gap: 30px;
     flex-wrap: wrap;
-    margin-top: 60px;
-    padding-right: 300px;
-    margin-right: 360px;
+    margin-top: 40px;
+    padding-right: 100px;
+    margin-right: 100px;
 }
 
 .textFormation{
     width: 20px;
-    padding-right: 120px;
-    padding-left: 120px;
+    padding-right: 80px;
+    padding-left: 80px;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -184,7 +184,7 @@ button:hover{
 }
 
 /* DESKTOP */
-@media (max-width:1920px) {
+@media (min-width: 1024) and (max-width:1920px) {
     .realInformations{
         margin: 40px 0 0;
         padding: 0;
