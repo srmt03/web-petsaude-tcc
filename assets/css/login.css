@@ -1,167 +1,170 @@
 /* DEFINIÇÕES DE TAMANHO E FONTE */
-body{
-    height: 100vh;
-    width: 100vw;
-    background-image: url(../img/bg-login-cad.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 55%;
-    font-family: 'Inter', sans-serif;
-    animation: zoom 1s;
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../img/bg-login-cad.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 55%;
+  font-family: "Inter", sans-serif;
+  animation: zoom 1s;
 }
 
 /* DEFINIÇÕES DE BACKGROUND E TAMANHO */
-main{
-    display: flex;
-    width: 100%;
-    height: 100%;
+main {
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
 /** Cor do Background **/
-.linear-gradient{
-    display: flex;
-    width: 50%;
-    height: 100%;
-    background: linear-gradient(112deg, rgba(9, 43, 90, 0.7) 0%, rgba(158, 209, 183, 0.7) 100%);
+.linear-gradient {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    112deg,
+    rgba(9, 43, 90, 0.7) 0%,
+    rgba(158, 209, 183, 0.7) 100%
+  );
 }
 
 /* FORMULÁRIO DE LOGIN */
-form{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 50%;
-    height: 100%;
-    background-color: white;
-    padding-top: 4%;
-    padding-bottom: 1%;
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  padding-top: 4%;
+  padding-bottom: 1%;
 }
 /** Header do Form **/
-.form-header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 70%;
-    height: fit-content;
+.form-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  height: fit-content;
 }
-.form-header h1{
-    font-size: 3.5rem;
-    font-weight: 700;
-    letter-spacing: 0.05em;
+.form-header h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
 }
-.form-header span{
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: #A9A9A9;
+.form-header span {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #a9a9a9;
 }
 /** Login com o Google **/
-.login-google-button{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 4%;
-    width: 72%;
-    gap: 8px;
+.login-google-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4%;
+  width: 72%;
+  gap: 8px;
 }
-.button-login-google{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 80px;
-    width: 80px;
-    margin-bottom: 3%;
-    background-color: #ECECEC;
-    border-radius: 50%;
+.button-login-google {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 80px;
+  margin-bottom: 3%;
+  background-color: #ececec;
+  border-radius: 50%;
 }
-.button-login-google img{
-    height: 65%;
-    width: 65%;
+.button-login-google img {
+  height: 65%;
+  width: 65%;
 }
-.text-login-google{
-    font-size: 1.2rem;
-    font-weight: 400;
-    color: #A9A9A9;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    gap: 10px;
+.text-login-google {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #a9a9a9;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
 }
 .text-login-google::after {
-    content: "";
-    display: flex;
-    height: 2px;
-    background-color: #ECECEC;
-    flex-grow: 1;
+  content: "";
+  display: flex;
+  height: 2px;
+  background-color: #ececec;
+  flex-grow: 1;
 }
 .text-login-google::before {
-    content: "";
-    display: flex;
-    height: 2px;
-    background-color: #ECECEC;
-    flex-grow: 1;
+  content: "";
+  display: flex;
+  height: 2px;
+  background-color: #ececec;
+  flex-grow: 1;
 }
 /*** Inputs dos Dados de Login ***/
-.inputs-container{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    gap: 16px;
+.inputs-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 16px;
 }
-label{
-    font-size: 1.2rem;
-    font-weight: 400;
+label {
+  font-size: 1.2rem;
+  font-weight: 400;
 }
-label input{
-    font-size: 1.1rem;
-    height: 70px;
-    width: 100%;
-    border-bottom: 1px solid black;
+label input {
+  font-size: 1.1rem;
+  height: 70px;
+  width: 100%;
+  border-bottom: 1px solid black;
 }
 /*** Reset da Senha ***/
-.reset-pass{
-    display: flex;
-    justify-content: flex-end;
-    font-weight: 600;
+.reset-pass {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 600;
 }
-.reset-pass a{
-    font-size: 1.1rem;
+.reset-pass a {
+  font-size: 1.1rem;
 }
 
 /*** BOTÃO DE LOGIN ***/
-.login-button{
-    height: 50px;
-    background-color: #09738A;
-    color: white;
-    font-size: 1.5rem;
-    font-weight: 700;
-    border-radius: 10px;
-    margin-top: 8%;
-    transition: 0.5s;
+.login-button {
+  height: 50px;
+  background-color: #09738a;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 10px;
+  margin-top: 8%;
+  transition: 0.5s;
 }
-.login-button:hover{
-    background-color: #78A890;
-    transform: scale(1.03);
+.login-button:hover {
+  background-color: #78a890;
+  transform: scale(1.03);
 }
 /* NOVO CADASTRO */
-.new-register{
-    display: flex;
-    font-size: 1.1rem;
-    margin-top: 20%;
-    gap: 6px;
+.new-register {
+  display: flex;
+  font-size: 1.1rem;
+  margin-top: 20%;
+  gap: 6px;
 }
-.new-register a{
-    font-weight: bold;
+.new-register a {
+  font-weight: bold;
 }
-
 
 /* ANIMAÇÃO DE ABERTURA */
-@keyframes zoom{
-    0% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
+@keyframes zoom {
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 /**
@@ -170,129 +173,127 @@ label input{
 *
 **/
 
-
 /*** DESKTOP ***/
-@media (min-width:1024px) and (max-width:1920px) {
-    /** Header do Form **/
-    .form-header h1{
-        font-size: 2.5rem;
-    }
-    .form-header span{
-        font-size: 1.2rem;
-    }
-    /** Login com o Google **/
-    .button-login-google{
-        height: 60px;
-        width: 60px;
-    }
-    .text-login-google{
-        font-size: 1rem;
-    }
-    /*** Inputs dos Dados de Login ***/
-    .inputs-container{
-        gap: 8px;
-    }
-    label{
-        font-size: 1.1rem;
-    }
-    label input{
-        font-size: 1rem;
-        height: 50px;
-    }
-    /*** Reset da Senha ***/
-    .reset-pass a{
-        font-size: 0.9rem;
-    }
+@media (min-width: 1024px) and (max-width: 1920px) {
+  /** Header do Form **/
+  .form-header h1 {
+    font-size: 2.5rem;
+  }
+  .form-header span {
+    font-size: 1.2rem;
+  }
+  /** Login com o Google **/
+  .button-login-google {
+    height: 60px;
+    width: 60px;
+  }
+  .text-login-google {
+    font-size: 1rem;
+  }
+  /*** Inputs dos Dados de Login ***/
+  .inputs-container {
+    gap: 8px;
+  }
+  label {
+    font-size: 1.1rem;
+  }
+  label input {
+    font-size: 1rem;
+    height: 50px;
+  }
+  /*** Reset da Senha ***/
+  .reset-pass a {
+    font-size: 0.9rem;
+  }
 
-    /*** BOTÃO DE LOGIN ***/
-    .login-button{
-        font-size: 1.3rem;
-    }
+  /*** BOTÃO DE LOGIN ***/
+  .login-button {
+    font-size: 1.3rem;
+  }
 
-    /* NOVO CADASTRO */
-    .new-register{
-        font-size: 1rem;
-    }
+  /* NOVO CADASTRO */
+  .new-register {
+    font-size: 1rem;
+  }
 }
 
 /* TABLET */
-@media (min-width:768px) and (max-width:1023px){
-    
+@media (min-width: 768px) and (max-width: 1023px) {
 }
 
 /* MOBILE */
-@media (max-width:767px) {
-    /* DEFINIÇÕES DE TAMANHO E FONTE */
-    body{
-        background-image: none;
-    }
-    /* DEFINIÇÕES DE BACKGROUND E TAMANHO */
-    main{
-        flex-direction: column;
-    }
-    /** Cor do Background **/
-    .linear-gradient{
-        display: none;
-    }
-    /* FORMULÁRIO DE LOGIN */
-    form{
-        width: 100%;
-        background-color: white;
-        padding: 32px;
-        justify-content: space-around;
-    }
-    /** Header do Form **/
-    .form-header{
-        width: 100%;
-    }
-    .form-header h1{
-        font-size: 1.8rem;
-    }
-    .form-header span{
-        font-size: 1rem;
-    }
-    /** Login com o Google **/
-    .login-google-button{
-        margin-top: 10%;
-        width: 100%;
-    }
-    .button-login-google{
-        height: 60px;
-        width: 60px;
-        margin-bottom: 5%;
-    }
-    .button-login-google img{
-        height: 65%;
-        width: 65%;
-    }
-    .text-login-google{
-        font-size: 1rem;
-    }
-    /*** Inputs dos Dados de Login ***/
-    .inputs-container{
-        width: 100%;
-        gap: 16px;
-    }
-    label{
-        font-size: 1rem;
-    }
-    label input{
-        font-size: 1rem;
-        height: 50px;
-    }
-    /*** Reset da Senha ***/
-    .reset-pass a{
-        font-size: 1rem;
-    }
+@media (max-width: 767px) {
+  /* DEFINIÇÕES DE TAMANHO E FONTE */
+  body {
+    background-image: none;
+  }
+  /* DEFINIÇÕES DE BACKGROUND E TAMANHO */
+  main {
+    flex-direction: column;
+  }
+  /** Cor do Background **/
+  .linear-gradient {
+    display: none;
+  }
+  /* FORMULÁRIO DE LOGIN */
+  form {
+    width: 100%;
+    background-color: white;
+    padding: 32px;
+    justify-content: space-around;
+  }
+  /** Header do Form **/
+  .form-header {
+    width: 100%;
+  }
+  .form-header h1 {
+    font-size: 1.8rem;
+  }
+  .form-header span {
+    font-size: 1rem;
+  }
+  /** Login com o Google **/
+  .login-google-button {
+    margin-top: 10%;
+    width: 100%;
+  }
+  .button-login-google {
+    height: 60px;
+    width: 60px;
+    margin-bottom: 5%;
+  }
+  .button-login-google img {
+    height: 65%;
+    width: 65%;
+  }
+  .text-login-google {
+    font-size: 1rem;
+  }
+  /*** Inputs dos Dados de Login ***/
+  .inputs-container {
+    width: 100%;
+    gap: 16px;
+  }
+  label {
+    font-size: 1rem;
+  }
+  label input {
+    font-size: 1rem;
+    height: 50px;
+  }
+  /*** Reset da Senha ***/
+  .reset-pass a {
+    font-size: 1rem;
+  }
 
-    /*** BOTÃO DE LOGIN ***/
-    .login-button{
-        height: 45px;
-        font-size: 1.2rem;
-    }
-    /* NOVO CADASTRO */
-    .new-register{
-        margin-top: 40%;
-        font-size: 1rem;
-    }
+  /*** BOTÃO DE LOGIN ***/
+  .login-button {
+    height: 45px;
+    font-size: 1.2rem;
+  }
+  /* NOVO CADASTRO */
+  .new-register {
+    margin-top: 40%;
+    font-size: 1rem;
+  }
 }
