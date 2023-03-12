@@ -1,9 +1,17 @@
 /* DEFINIÇÕES DE TAMANHO E FONTE */
+<<<<<<< HEAD
 body {
   height: 100vh;
   width: 100vw;
   font-family: "Inter", sans-serif;
   animation: zoom 0.9s;
+=======
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Inter', sans-serif;
+    animation: zoom 0.9s;
+>>>>>>> 906025fe16d8d1a00caee4b3c95afbe07d82b799
 }
 
 /* DEFINIÇÕES DE BACKGROUND E TAMANHO */
@@ -20,6 +28,7 @@ main {
 }
 
 /* BOTÃO VOLTAR A TELA ANTERIOR */
+<<<<<<< HEAD
 .back-view {
   display: flex;
   align-items: center;
@@ -27,6 +36,15 @@ main {
   padding: 3%;
   height: 10px;
   width: 10px;
+=======
+.back-view{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+    height: 10vh;
+    width: 10vh;
+>>>>>>> 906025fe16d8d1a00caee4b3c95afbe07d82b799
 }
 .back-view i {
   font-size: 4rem;
@@ -38,6 +56,7 @@ main {
 }
 
 /* DEFINIÇÕES DE IMAGEM BACKGROUND */
+<<<<<<< HEAD
 .conteiner-img {
   display: flex;
   align-items: center;
@@ -46,12 +65,23 @@ main {
   height: 100%;
   transform: translateX(-5%);
   z-index: 1;
+=======
+.conteiner-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    height: 100%;
+    transform: translateX(-5%);
+    z-index: 1;
+>>>>>>> 906025fe16d8d1a00caee4b3c95afbe07d82b799
 }
 .bg-image {
   height: 70%;
 }
 
 /* FORMULÁRIO DE PROFISSIONAIS */
+<<<<<<< HEAD
 form {
   display: flex;
   flex-direction: column;
@@ -63,7 +93,20 @@ form {
   padding-top: 4%;
   padding-bottom: 1%;
   z-index: 2;
+=======
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50vw;
+    height: 100%;
+    background-color: white;
+    padding-bottom: 1%;
+    z-index: 2;
+>>>>>>> 906025fe16d8d1a00caee4b3c95afbe07d82b799
 }
+
 /** Header do Form **/
 .form-header {
   display: flex;
@@ -71,16 +114,25 @@ form {
   align-items: center;
   width: 70%;
 }
+<<<<<<< HEAD
 .form-header h1 {
   font-size: 3.5rem;
   font-weight: 700;
   letter-spacing: 0.05em;
+=======
+.form-header h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    padding-top: 5%;
+>>>>>>> 906025fe16d8d1a00caee4b3c95afbe07d82b799
 }
 .form-header span {
   font-size: 1.5rem;
   font-weight: 400;
   color: #a9a9a9;
 }
+
 /*** Inputs das Caracteristicas do Profissional ***/
 .inputs-container {
   display: flex;
@@ -94,10 +146,20 @@ form {
   flex-wrap: wrap;
 }
 
+<<<<<<< HEAD
 .specialties {
   display: flex;
   flex-direction: column;
   gap: 16px;
+=======
+
+/** Especialidades do profissional **/
+
+.specialties{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+>>>>>>> 906025fe16d8d1a00caee4b3c95afbe07d82b799
 }
 .specialties span {
   font-size: 1.2rem;
@@ -109,6 +171,7 @@ form {
   align-items: center;
   /* justify-content: space-between; */
 }
+<<<<<<< HEAD
 .inputs-specialties label {
   display: flex;
   align-items: center;
@@ -118,6 +181,17 @@ form {
   gap: 6px;
   padding-top: 2px;
   padding-right: 40px;
+=======
+.inputs-specialties label{
+    display: flex;
+    align-items: center;
+    /* width: max-content; */
+    font-size: 1.2rem;
+    font-weight: 400vw;
+    gap: 6px;
+    padding-top: 2px;
+    padding-right: 40px;
+>>>>>>> 906025fe16d8d1a00caee4b3c95afbe07d82b799
 }
 
 .inputs-specialties input {
@@ -140,6 +214,7 @@ form {
   font-weight: 400;
   padding-top: 5%;
 }
+<<<<<<< HEAD
 .inputs-animals {
   display: flex;
   align-items: center;
@@ -156,6 +231,30 @@ form {
 }
 .inputs-animals input {
   height: 100%;
+=======
+
+.inputs-animals{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center ;
+    /* justify-content: space-between; */
+  
+}
+
+.inputs-animals label{
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    gap: 6px;
+    padding-top: 2px;
+    padding-right: 40px;
+}
+.inputs-animals input{
+    width: 20px;
+    border: none;
+    background-color: #A9A9A9;
+>>>>>>> 906025fe16d8d1a00caee4b3c95afbe07d82b799
 }
 label {
   font-size: 1.2rem;
@@ -168,14 +267,47 @@ label input {
   border-bottom: 1px solid black;
 }
 
+.atuacao-container p{
+    padding-top: 16px;
+}
+
+
+/* Alinhamento de duas label*/
+.atuacao-crmv{
+    display: flex;
+    align-items: center;
+    gap: 200px;
+
+}
+
+.area {
+    display: flex;
+    width: 200%;
+}
+
+.CRMV {
+    display: flex;
+    width: 140%;
+}
+
 /* ERROR */
+<<<<<<< HEAD
 .form-group {
   display: flex;
   justify-content: space-between;
   width: 100%;
   gap: 35px;
+=======
+.form-group{
+    display: flex;
+    padding-top: 5%;
+    width: 100%;
+    gap: 35px;
+>>>>>>> 906025fe16d8d1a00caee4b3c95afbe07d82b799
 }
+
 /** Botão de Cadastro **/
+<<<<<<< HEAD
 .register-button {
   display: flex;
   align-items: center;
@@ -194,14 +326,47 @@ label input {
 .register-button:hover {
   background-color: #78a890;
   transform: scale(1.03);
+=======
+
+.register-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 100%;
+    background-color: #09738A;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 10px;
+    margin-top: 10%;
+    transition: 0.5s;
 }
 
+.register-button a{
+    width: 100%;
+}
+
+.register-button:hover{
+    background-color: #78A890;
+    transform: scale(1.03);
+>>>>>>> 906025fe16d8d1a00caee4b3c95afbe07d82b799
+}
+
+
 /* FAZER LOGIN */
+<<<<<<< HEAD
 .text-login {
   display: flex;
   font-size: 1.1rem;
   margin-top: 5%;
   gap: 6px;
+=======
+.text-login{
+    display: flex;
+    font-size: 1.1rem;
+    gap: 6px;
+>>>>>>> 906025fe16d8d1a00caee4b3c95afbe07d82b799
 }
 .text-login a {
   font-weight: bold;
@@ -223,8 +388,47 @@ label input {
 *
 **/
 
+<<<<<<< HEAD
 /*** DESKTOP ***/
 @media (min-width: 1024px) and (max-width: 1920px) {
+=======
+/* DESKTOP */
+@media (max-width:1920px) {
+
+    main{
+        height: 250%;
+        width: 100%;
+        background-size: 200%;
+    }
+
+
+    /* BOTÃO VOLTAR A TELA ANTERIOR */
+    .back-view i {
+        font-size: 3rem;
+    }
+    /* DEFINIÇÃO DE IMAGEM BACKGROUND */
+   
+    /* DEFINIÇÕES DE IMAGEM BACKGROUND */
+    .conteiner-img{
+        display: flex;
+        align-items: flex-start;
+        margin-top: 200px;
+    }
+
+    .bg-image{
+        padding-right: 10%;
+        height: 28%;
+    }
+    /** Botão de Cadastro **/
+    .register-button{
+        padding: 6%;
+        font-size: 1.1rem;
+    }
+    /* FAZER LOGIN */
+    .text-login{
+        font-size: 1rem;
+    }
+>>>>>>> 906025fe16d8d1a00caee4b3c95afbe07d82b799
 }
 
 /* TABLET */
@@ -232,5 +436,162 @@ label input {
 }
 
 /* MOBILE */
+<<<<<<< HEAD
 @media (max-width: 767px) {
 }
+=======
+@media (max-width:767px) {
+    /* DEFINIÇÕES DE TAMANHO E FONTE */
+    body{
+        height: 100%;
+        width: 100%;
+    }
+    /* DEFINIÇÕES DE BACKGROUND E TAMANHO */
+    main{
+        flex-direction: column;
+        justify-content: center;
+        background: none;
+    }
+
+    /* Formação de toda main com seus inputs */
+
+    form{
+        display: flex;
+        align-items: flex-start;
+        font-size: 10rem;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        padding-top: 4%;
+        padding-left: 10%;
+        padding-bottom: 1%;
+        z-index: 2;
+    }
+
+    form .form-header{
+        margin: 20px;
+    }
+
+    .form-header h1{
+        font-size: 1.6rem;
+        text-align: center;
+        letter-spacing: 0.05em;
+    }
+
+    .form-header span{
+        font-size: 0.9rem;
+        text-align: center;
+        
+    }
+
+    .form-group{
+       display: flex;
+       flex-direction: column;
+    }
+
+    /* Especialidades e caracteristicas dos animais */
+    .inputs-specialties {
+        display: flex;
+        flex-wrap: wrap;
+        width: 190%;
+    }
+
+
+    .specialties span{
+        padding-top: 40px;
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+
+    .inputs-animals{
+        
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center ;
+        width: 160%;
+    }
+
+    .inputs-animals input{
+        align-items: flex-start;
+    }
+
+
+    .animals span{
+        padding-top: 40px;
+        font-size: 1.3rem;
+        width: 210px;
+        font-weight: bold;
+    }
+    
+    /* Area de atuação */
+
+    .atuacao-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .atuacao-container input{
+        width: 170%;
+    }
+
+    /* Area de atuação e CRMV em conjuto*/
+    .atuacao-crmv{
+        display: flex;
+        flex-direction: column;
+        padding-top: 0%;
+        gap: 10%;
+    }
+
+    .atuacao-crmv p{
+      font-size: 20px;
+      width: 180px;
+    }
+
+    .atuacao-crmv input{
+        display: flex;
+        width: 160%;
+    }
+
+    /* BOTÃO VOLTAR A TELA ANTERIOR */
+    .back-view{
+        display: none;
+    }
+    
+    /* DEFINIÇÕES DE IMAGEM BACKGROUND */
+    .conteiner-img{
+        display: none;
+    }
+
+    /* CONTEINER DOS BOTÕES */
+    .user{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+        margin-top: 20%;
+        gap: 10px;
+    }
+
+    .atuacao-crmv{
+        display: flex;
+        align-items: center;
+    }
+
+    /** Botão de Cadastro **/
+    .register-button{
+        width: 150%;
+        margin-left: 60%;
+    }
+
+    /* FAZER LOGIN */
+    .text-login{
+        display: flex;
+        font-size: 1.1rem;
+        margin-top: 10%;
+        
+    }
+}   
+
+>>>>>>> 906025fe16d8d1a00caee4b3c95afbe07d82b799

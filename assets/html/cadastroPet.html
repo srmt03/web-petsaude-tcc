@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/cadastroPet.css">
+    <script
+        src="https://kit.fontawesome.com/d374dd1618.js"
+        crossorigin="anonymous"
+  ></script>
+    <title>PetSaúde - Cadastre seu pet!</title>
+</head>
+    <body>
+        <header>
+            <a class="back-view" href=""> 
+                <i class="fas fa-arrow-left"></i>
+            </a>
+        </header>
+        <main>
+            <div class="foto">
+                   <img src="../img/add-photo.png" alt="Adicione uma imagem" class="fileAdd"> 
+            </div>
+            <div class="infosAnimal">
+                <div class="realInformations">
+
+                    <label class="textFormation ">
+                        <p class="textInput especie">Espécie:</p>
+                        <input type="text" name="" id="especie" class="inputLabel especieLabel">
+                    </label> 
+                    <label class="textFormation ">
+                        <p class="textInput sexo">Sexo:</p>
+                        <input type="text" name="" id="sexo" class="inputLabel sexoLabel">
+                    </label> 
+    
+                    <label class="textFormation ">
+                        <p class="textInput peso">Peso:</p>
+                        <input type="text" name="" id="peso" class="inputLabel pesoLabel">
+                    </label> 
+    
+                    <label class="textFormation ">
+                        <p class="textInput microship">MicroChip:</p>
+                        <input type="text" name="" id="microship" class="inputLabel microshipLabel">
+                    </label> 
+    
+                    <label class="textFormation ">
+                        <p class="textInput tamanho">Tamanho:</p>
+                        <input type="text" name="" id="tamanho" class="inputLabel tamanhoLabel">
+                    </label> 
+    
+                    <label class="textFormation ">
+                        <p class="textInput alergia">Alergia:</p>
+                        <input type="text" name="" id="tamanho" class="inputLabel alegriaLabel">
+                    </label> 
+
+                    <label class="textFormation">
+                        <p class="textInput raca">Raça:</p>
+                        <input type="text" name="" id="raca" class="inputLabel racaLabel">
+                    </label> 
+    
+                    <div class="nivel-agress textFormation">
+                        <p class="textInput nivel-agressividade">Agressividade:</p>
+                        <select name="options-status" id="status-dos-alunos" class="select-item nivel-agressividade-select">
+                            <option value="consult" selected class="opcoes" id="nenhum"></option>
+                            <option value="consult" selected class="opcoes" id="alta">Alta</option>
+                            <option value="consult" selected class="opcoes" id="media">Média</option>
+                            <option value="consult" selected class="opcoes" id="baixa">Baixa</option>
+                            <option value="consult" selected class="opcoes" id="muito baixa">Muito baixa</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <button class="salvar" id="salvar">
+                <a href="../html/home.html">Salvar</a>
+            </button>
+        </footer>
+    </body>
+</html>

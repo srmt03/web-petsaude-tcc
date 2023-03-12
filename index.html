@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +8,48 @@
     <title>PetSaúde</title>
 </head>
 <body>
-    <a href="./assets/html/login.html">TELA DE LOGIN</a>
+    <header>
+        <nav class="navigation">
+            <h1>PetSaúde</h1>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="./index.html">Home</a></li>
+                <li class="nav-item"><a href="#">Profissionas</a></li>
+                <li class="nav-item"><a href="#">Blog</a></li>
+                <li class="nav-item"><a href="#">Sobre nós</a></li>
+                <i class='bx bx-search'></i>
+            </ul>
+            <div class="menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="Login">
+                <img src="./assets/img/Login-person.png">
+                <h3>
+                    <a href="./assets/html/login.html">Entrar</a>
+                </h3>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="home">
+            <div class="home-text">
+                <div class="search-container">
+
+                    <input type="text" id="Search-Pet" placeholder="Pesquisar especialistas"/>
+                    
+                    <input type="text" id="Search-Vet" placeholder="Pesquisar veterinários próximos"/> 
+        
+                </div>
+                <h1 class="text-h1">Agende suas consultas e forneça o melhor para o seu Pet!</h1>
+                <a href="#" class="home-btn">Procure um veterinário próximo!</a>
+                <img class="patas" src="./assets/img/pet-patas.svg">
+            </div>
+            <div class="home-img">
+                <img src="./assets/img/home-pets.svg" alt="dog-cat">
+            </div>
+        </section>
+    </main>
+    <script src="./assets/html/js/utils/petsaude.js"></script>
 </body>
 </html>

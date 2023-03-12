@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    background-color: #90EE90;;
+}
+
+/* Botão para sair da página e voltar a home*/
+
+.outside{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    border: none;
+    background-color: #ffff;
+}
+
+.outside a:link{
+    color: #ffff;
+}
+    
+.outside img{
+    width: 30%;
+    height: 20%;
+}
+
+main{
+    
+    background-image: linear-gradient(135deg, var(--white-300), var(--beige-500));
+}
+
+/* Imagem e informações do tutor */
+
+.image-tutor{
+    padding-top: 4%;
+    padding-left: 2%;
+    height: 38vh;
+}
+
+.tutor{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: white;
+    margin-left: 50px;
+    padding-top: 2%;
+    width: 24%;
+    height: 50vh;
+}
+
+.name-container{
+    padding-left: 35%;
+}
+
+.name-container span{
+    padding-left: 10%;
+}
+
+.info-container p{
+    font-weight: bold;
+}
+
+.info-container span{
+    font-weight: lighter;
+}
+
+/* Informações dos pets */
+
+.pets-container{
+    width: 60%;
+    height: 70%;
+    margin-top: 60px;
+    margin-right: 300px;
+}
+
+
+.dog{
+    display: flex;
+    align-items: center;
+    gap: 90px;
+    flex-wrap: wrap;
+}
+
+.Periquito {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 90px;
+    flex-wrap: wrap;
+}
+

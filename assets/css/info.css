@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(135deg, var(--white-300), var(--beige-500));
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    background-color: var(--green-500);
+}
+
+/* Seta para voltar a tela anterior */
+.back-view{
+    display: flex; 
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 10%;
+}
+.back-view i {
+    font-size: 6rem;
+    color: black;
+    transition: 0.5s;
+}
+.back-view i:hover{
+    transform: scale(1.1);
+}
+
+
+/* Botão para sair da página e voltar a home*/
+
+.outside{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    border: none;
+}
+
+
+.outside img{
+    width: 30%;
+    height: 20%;
+}
+
+
+
+main{
+    margin: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+/* Imagem e informações do tutor */
+
+.tutor-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.image-tutor{
+    padding-top: 4%;
+    padding-left: 2%;
+    height: 20vh;
+}
+
+.tutor{
+    background-color: #ffff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10%;
+    margin-left: 50px;
+    padding-top: 2%;
+    width: 100%;
+    height: 50vh;
+}
+
+.name-container{
+    padding-left: 35%;
+}
+
+.name-container span{
+    padding-left: 10%;
+}
+
+.info-container p{
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.info-container span{
+    font-weight: lighter;
+}
+
+/* Informações dos pets */
+
+.pets-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffff;
+    border-radius: 20px;
+    width: 50%;
+    height: 40vh;
+    gap: 50px;
+}
+
+.pets-container h1{
+    padding: 5%;
+    font-size: 3rem;
+}
+
+.Dog{
+   
+    width: 80%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Dog p{
+    height: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Bird{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Bird p{
+    height: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+
+

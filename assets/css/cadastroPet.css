@@ -1,0 +1,320 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(135deg, var(--white-300), var(--beige-500));
+}
+
+header{
+    background-color: var( --green-400);
+    height: 15%;
+    display: flex; 
+    justify-content: start;
+    align-items: center;
+}
+
+.back-view{
+    display: flex; 
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 10%;
+}
+.back-view i {
+    font-size: 6rem;
+    color: black;
+    transition: 0.5s;
+}
+.back-view i:hover{
+    transform: scale(1.1);
+}
+
+main{
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+}
+
+.foto{
+    width:  50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 300px;
+    padding-bottom: 100px;
+}
+
+.fileAdd{
+    height: 100%;
+    border-radius: 90%;
+    border: 0 solid black;
+    box-shadow: 0 5px 10px 
+}
+
+.infosAnimal{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+
+}
+
+/*
+.realInformations{
+    width: 50%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 90px;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    padding-right: 300px;
+    margin-right: 360px;
+}
+
+.textFormation{
+    width: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+*/
+
+.realInformations{
+    width: 70%;
+    height: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 60px;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    padding-right: 300px;
+    margin-right: 360px;
+}
+
+.textFormation{
+    width: 20px;
+    padding-right: 120px;
+    padding-left: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+
+.textInput{
+    font-size: 1.5rem;
+}
+
+.inputLabel {
+    background-color: transparent;
+    width: 199px;
+    margin-top: 10px;
+    border-bottom: 1px solid #000000;
+    padding: 2px 5px;
+    margin-right: 50px;
+}
+
+.nivel-agress{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: top;
+}
+
+.nivel-agressividade-select{
+    background-color: transparent;
+    height: 30px;
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid #000000;
+    padding: 2px 5px;
+    font-size: large;
+}
+
+footer{
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    height: 50px;
+    width: 500px;
+    border-radius: 90px;
+    background-color: var(  --green-500);
+    transition: 1.5s;
+}
+
+button a{
+    font-size: 1.5625rem;
+    color: white;  
+}
+
+/*
+button:hover{
+    background-color: var(  --green-400);
+    transform: scale(1.3);
+    font-weight: 900;
+    color: black;
+}
+*/
+@media (min-width:768px) and (max-width:1023px){
+    
+}
+
+/* DESKTOP */
+@media (max-width:1920px) {
+    .realInformations{
+        margin: 40px 0 0;
+        padding: 0;
+        width: 70%;
+        gap: 100px;
+    }
+
+    .foto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .fileAdd{
+        margin: 30px;
+    }
+
+    .infosAnimal{
+        display: flex;
+        justify-content: center;
+        align-items: top;
+        padding: 0;
+    }
+
+    .textFormation{
+        padding-left: 0;
+        padding-right: 100px;
+    }
+    
+    .textInput{
+        font-size: 1rem;
+    }
+
+    .inputLabel .nivel-agressividade-select{
+        width: 100px;
+    }
+}
+
+@media (max-width:767px) {
+
+    body{
+        width: 100vw;
+        background-image: linear-gradient(135deg, var(--white-300), var(--beige-500));
+    }
+    
+    header{
+        display: none;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        height: 80%;
+        margin-bottom: 10px;
+    }
+
+    .foto{
+        height: 214px;
+        width: 214px;
+        margin-bottom: 2px;
+        margin-top: 80px;
+        display: flex;
+        padding: 0;
+        align-items: center;
+    }
+
+    .infosAnimal{
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .realInformations{
+        width: 100%;
+        display: flex;
+        margin: none;
+        padding: 0 25px;
+        gap: 30px;
+    }
+
+    .textFormation{
+        width: 120px;
+        display: flex;
+        align-items: end;
+        justify-content: end;
+        justify-items: end;
+        padding: 0;
+        margin: 0;
+        padding-top: 20px;
+    }
+
+    .textInput{
+        margin: 0;
+        display: flex;
+        justify-content: start;
+        width: 100%;
+    }
+
+    .inputLabel, .nivel-agressividade-select {
+        width: 100%;
+    }
+
+    .inputLabel{
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+    .especieLabel, .pesoLabel, .tamanhoLabel, .racaLabel{
+        margin-left: 0;
+    }
+
+    footer{
+        height: 20%;
+        display: flex;
+        justify-content: bottom;
+    }
+
+    button{
+        background-color: red;
+        height: 40px;
+        width: 261px;
+        border-radius: 90px;
+        font-size: 1.2rem;
+        background-color: var(  --green-500);
+        color: white;
+    }
+    
+    button:hover{
+        background-color: var(  --green-500);
+        transform: scale(1);
+        font-weight: unset;
+        color: white;
+    }
+
+    button a{
+        font-size: 1.2rem;
+        color: white;  
+    }
+}

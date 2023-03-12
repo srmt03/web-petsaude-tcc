@@ -11,6 +11,15 @@
   --gray-600: #49454f;
   --black-700: #1c1b1f;
   --black-900: #000000;
+  --error-color: #fe6869;
+  --success-color: #4bc960;
+  --warning-color: #ffc02e;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100vw;
+  font-family: "Inter", sans-serif;
 }
 
 * {
